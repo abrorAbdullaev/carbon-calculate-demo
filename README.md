@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Short Intro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Repository is done as a show case for the Test Task, though it has lots of todos and improvements to be taken.
+The App is deployed to [Github Pages](https://abrorabdullaev.github.io/carbon-calculate-demo/) and can be viewed there.
+Insert your API Key into the input field on the top of the page. ! Keep in mind that the error displaying is not implemented yet
+so if the request will fail, maybe because Api requests limit is reached or anything else, you will see the error only in browser console.
 
 # API Key
 
