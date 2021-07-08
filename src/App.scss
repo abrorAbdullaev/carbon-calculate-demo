@@ -1,0 +1,33 @@
+// Css Vars
+/*
+Lighets -> Darkest
+#d8f3dc
+#b7e4c7
+#95d5b2
+#74c69d
+#40916c
+#2d6a4f
+#1b4332
+#081c15
+*/
+
+body {
+  --color-primary: #40916c;
+  --color-secondary: #95d5b2;
+
+  --color-dark: #081c15;
+  --color-light: #d8f3dc;
+}
+
+body {
+  background-color: #D65A31;
+
+  color: var(--color-primary);
+  background-color: var(--color-light);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px;
+}

@@ -1,0 +1,14 @@
+.app-header-component {
+  padding: 20px 10px;
+  background-color: var(--color-dark);
+
+  h1 {
+    margin: 0;
+    display: inline-block;
+  }
+
+  .bolt-icon {
+    vertical-align: sub;
+    margin-left: 10px;
+  }
+}

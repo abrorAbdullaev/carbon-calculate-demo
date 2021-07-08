@@ -1,0 +1,38 @@
+.date-picker-component {
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  padding-top: 20px;
+
+  h2 {
+    text-align: center;
+  }
+
+  .slider-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  .card-container {
+    .MuiCard-root {
+      text-align: center;
+      margin: 0 10px;
+    }
+  }
+
+  .slick-center {
+    .MuiCard-root {
+      box-shadow: 0px 0px 10px var(--color-dark);
+    }
+  }
+
+  .slick-dots {
+    .filled:before {
+      color: var(--color-primary);
+    }
+
+    .unfilled:before {
+      color: red;
+    }
+  }
+}
