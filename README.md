@@ -5,6 +5,11 @@ The App is deployed to [Github Pages](https://abrorabdullaev.github.io/carbon-ca
 Insert your API Key into the input field on the top of the page. ! Keep in mind that the error displaying is not implemented yet
 so if the request will fail, maybe because Api requests limit is reached or anything else, you will see the error only in browser console.
 
+At the moment there are few Key Points that I might implement
+* Make the app to work with mock data
+* Write Tests
+* Implement Error Displaying
+
 # API Key
 
 The Api Key can be obtained from
