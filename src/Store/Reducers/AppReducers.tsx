@@ -24,6 +24,8 @@ export const appReducer = (state: AppContextInterface, action: AppActions): AppC
     }
 
     case AppActionType.CalculateDataFinished: {
+      console.log(action.payload);
+
       const carbonData = state.carbonCalculationResults;
       const existingInd = carbonData.findIndex((data) => data.date === action.payload.date);
 
