@@ -23,14 +23,17 @@ export const appReducer = (state: AppContextInterface, action: AppActions): AppC
       return { ...state, carbonCalculationLoading: true, };
     }
 
-    case AppActionType.CalculateDataFinished: {
-      console.log(action.payload);
-
+    case AppActionType.CalculateDataSucceed: {
       const carbonData = state.carbonCalculationResults;
       const existingInd = carbonData.findIndex((data) => data.date === action.payload.date);
 
       existingInd >= 0 ? carbonData[existingInd] = action.payload : carbonData.push(action.payload);
 
+      return { ...state, carbonCalculationLoading: false, };
+    }
+
+    case AppActionType.CalculateDataFailed: {
+      // @TODO Make the payload with error message to be stored and used in errors component
       return { ...state, carbonCalculationLoading: false, };
     }
 

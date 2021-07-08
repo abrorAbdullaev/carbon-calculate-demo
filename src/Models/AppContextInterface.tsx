@@ -14,7 +14,7 @@ const generateWeek: () => UserElectricityMetrics[] = () => {
   let date: Date = new Date();
   let day = 60 * 60 * 24 * 1000;
 
-  for (var i = 0; i <= 2; i++) {
+  for (var i = 0; i <= 6; i++) {
     data.push({
       date: new Date(date.getTime() + day * i),
       location: 'de', // Let DE to be default

@@ -4,7 +4,8 @@ export enum AppActionType {
   UpdateUserData,
   UpdateCarbonApiKey,
   CalculateWeeklyData,
-  CalculateDataFinished,
+  CalculateDataSucceed,
+  CalculateDataFailed,
 }
 
 export interface UpdateUserData {
@@ -25,9 +26,13 @@ export interface CalculateWeeklyData {
   type: AppActionType.CalculateWeeklyData,
 }
 
-export interface CalculateDataFinished {
-  type: AppActionType.CalculateDataFinished,
+export interface CalculateDataSucceed {
+  type: AppActionType.CalculateDataSucceed,
   payload: CarbonEmissionResult,
 }
 
-export type AppActions = UpdateUserData | CalculateWeeklyData | CalculateDataFinished | UpdateCarbonApiKey;
+export interface CalculateDataFailed {
+  type: AppActionType.CalculateDataFailed,
+}
+
+export type AppActions = UpdateUserData | CalculateWeeklyData | CalculateDataSucceed | UpdateCarbonApiKey | CalculateDataFailed;
