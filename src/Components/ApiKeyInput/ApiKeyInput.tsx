@@ -13,7 +13,9 @@ export const ApiKeyInput: React.FC = () => {
         Insert Your Api Key here
       </Typography>
       <Box className="info-text">
-        <span>The API Key can be acquired at <a rel="noreferrer" target="_blank" href="https://www.carboninterface.com/">CarbonInterface</a></span>
+        <Typography component="span">
+          The API Key can be acquired at <a rel="noreferrer" target="_blank" href="https://www.carboninterface.com/">CarbonInterface</a>
+        </Typography>
       </Box>
       <FormControl>
         <TextField 

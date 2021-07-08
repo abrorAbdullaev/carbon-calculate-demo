@@ -24,7 +24,7 @@ function App() {
               <LinearProgress />
             </div> 
           }
-          { state.carbonCalculationResults.length && <CarbonUsage /> }
+          { !!state.carbonCalculationResults.length && <CarbonUsage /> }
         </div>
       </ThemeProvider>
     </AppContext.Provider>

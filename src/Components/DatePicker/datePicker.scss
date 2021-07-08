@@ -8,9 +8,13 @@
   }
 
   .slider-container {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     padding-bottom: 30px;
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
   }
 
   .card-container {
