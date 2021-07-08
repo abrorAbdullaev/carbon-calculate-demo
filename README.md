@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# API Key
+
+The Api Key can be obtained from
+[Carboninterface](https://docs.carboninterface.com/#/?id=getting-started)
+
 ## Available Scripts
 
 In the project directory, you can run:
