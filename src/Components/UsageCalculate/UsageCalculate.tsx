@@ -15,7 +15,7 @@ export const UsageCalculate: React.FC<{ data: UserElectricityMetrics[] }> = ({ d
       {/* https://github.com/mui-org/material-ui/issues/13394 */}
       <Tooltip title={disabled ? `Not all dates are filled, please fill missing information` : ''} arrow >
         <span>
-          <Button variant='contained' color='primary' disabled={disabled} onClick={() => dispatch(CalculateCarbonEffect(dispatch, state.data, 'K0DC9ahVchblZpgzT7Jg'))}>
+          <Button variant='contained' color='primary' disabled={disabled} onClick={() => dispatch(CalculateCarbonEffect(dispatch, state.data, state.carbonApiKey))}>
             Calculate
           </Button>
         </span>
